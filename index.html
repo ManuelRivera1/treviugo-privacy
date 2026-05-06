@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Política de Privacidad - TreviuGo</title>
+	<meta name="description" content="Política de Privacidad de TreviuGo">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--bg-1: #f8f6f1;
+			--bg-2: #efe9dc;
+			--ink: #222222;
+			--muted: #5d5a53;
+			--brand: #0f766e;
+			--brand-soft: #d7f0ed;
+			--card: #fffcf6;
+			--line: #ded8ca;
+			--shadow: 0 12px 35px rgba(30, 30, 30, 0.1);
+			--radius: 18px;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			color: var(--ink);
+			background:
+				radial-gradient(1200px 650px at 10% -15%, #f5d9b8 0%, transparent 65%),
+				radial-gradient(900px 520px at 100% 0%, #d8eee7 0%, transparent 70%),
+				linear-gradient(170deg, var(--bg-1), var(--bg-2));
+			min-height: 100%;
+			font-family: "Manrope", "Segoe UI", sans-serif;
+			line-height: 1.65;
+		}
+
+		.wrap {
+			width: min(920px, 92vw);
+			margin: 56px auto;
+			animation: rise 0.7s ease both;
+		}
+
+		.card {
+			background: color-mix(in srgb, var(--card) 95%, white 5%);
+			border: 1px solid var(--line);
+			border-radius: var(--radius);
+			box-shadow: var(--shadow);
+			overflow: hidden;
+			backdrop-filter: blur(1px);
+		}
+
+		.hero {
+			padding: 44px clamp(22px, 4vw, 44px) 26px;
+			border-bottom: 1px solid var(--line);
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.25));
+		}
+
+		.badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			font-size: 0.82rem;
+			font-weight: 700;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			color: #0b5f59;
+			background: var(--brand-soft);
+			border: 1px solid #b7dfda;
+			border-radius: 999px;
+			padding: 8px 12px;
+			margin-bottom: 16px;
+		}
+
+		h1 {
+			margin: 0;
+			font-family: "Newsreader", Georgia, serif;
+			font-size: clamp(1.9rem, 4vw, 2.8rem);
+			font-weight: 700;
+			line-height: 1.15;
+			letter-spacing: -0.02em;
+		}
+
+		.updated {
+			margin-top: 12px;
+			color: var(--muted);
+			font-weight: 600;
+		}
+
+		.content {
+			padding: 28px clamp(22px, 4vw, 44px) 40px;
+		}
+
+		h2,
+		h3 {
+			margin-top: 1.8em;
+			margin-bottom: 0.55em;
+			line-height: 1.25;
+			color: #1e1b16;
+		}
+
+		h2 {
+			font-family: "Newsreader", Georgia, serif;
+			font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+			padding-top: 10px;
+			border-top: 1px dashed #cdc4b0;
+		}
+
+		h2:first-of-type {
+			border-top: 0;
+			padding-top: 0;
+			margin-top: 0.6em;
+		}
+
+		h3 {
+			font-size: 1.02rem;
+			color: #3e3a31;
+			text-transform: uppercase;
+			letter-spacing: 0.02em;
+		}
+
+		p {
+			margin: 0.65em 0;
+		}
+
+		ul {
+			margin: 0.55em 0 0.9em 0;
+			padding-left: 1.2em;
+		}
+
+		li {
+			margin: 0.3em 0;
+		}
+
+		strong {
+			color: #111111;
+		}
+
+		a {
+			color: var(--brand);
+			text-decoration-thickness: 1.5px;
+			text-underline-offset: 2px;
+			font-weight: 700;
+		}
+
+		hr {
+			border: 0;
+			border-top: 1px solid var(--line);
+			margin: 1.1em 0;
+		}
+
+		.closing {
+			margin-top: 24px;
+			padding: 14px 16px;
+			border-radius: 12px;
+			border: 1px solid #c8e4e0;
+			background: #eef9f7;
+			font-weight: 700;
+		}
+
+		.footer {
+			margin-top: 16px;
+			color: var(--muted);
+			font-size: 0.9rem;
+		}
+
+		@keyframes rise {
+			from {
+				opacity: 0;
+				transform: translateY(12px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@media (max-width: 680px) {
+			.wrap {
+				margin: 22px auto;
+			}
+
+			.hero {
+				padding-top: 28px;
+			}
+
+			.content {
+				padding-bottom: 30px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="wrap">
+		<article class="card">
+			<header class="hero">
+				<div class="badge">TreviuGo • Documento Legal</div>
+				<h1>Política de Privacidad – TreviuGo</h1>
+				<p class="updated"><strong>Fecha de última actualización:</strong> 2026</p>
+			</header>
+
+			<section class="content">
+				<h2>1. Introducción</h2>
+				<p>TreviuGo es una plataforma digital orientada al descubrimiento de lugares turísticos y experiencias a través de contenido en video generado por los usuarios. El uso de la aplicación implica la aceptación de esta Política de Privacidad y de nuestros Términos y Condiciones.</p>
+				<p>Nos comprometemos a proteger la información personal de nuestros usuarios y a garantizar la transparencia en el tratamiento de los datos.</p>
+
+				<hr>
+
+				<h2>2. Información que recopilamos</h2>
+				<p>Podemos recopilar los siguientes datos:</p>
+
+				<h3>2.1 Información proporcionada por el usuario</h3>
+				<ul>
+					<li>Nombre de usuario</li>
+					<li>Correo electrónico</li>
+					<li>Información de perfil (avatar, biografía)</li>
+					<li>Contenido generado (videos, comentarios, interacciones)</li>
+				</ul>
+
+				<h3>2.2 Información recopilada automáticamente</h3>
+				<ul>
+					<li>Dirección IP</li>
+					<li>Tipo de dispositivo</li>
+					<li>Sistema operativo</li>
+					<li>Datos de uso (interacciones dentro de la app)</li>
+				</ul>
+
+				<h3>2.3 Información de ubicación</h3>
+				<p>TreviuGo puede recopilar ubicación aproximada o coordenadas cuando el usuario decide compartirlas en publicaciones.</p>
+
+				<hr>
+
+				<h2>3. Uso de la información</h2>
+				<p>Utilizamos la información para:</p>
+				<ul>
+					<li>Operar y mejorar la plataforma</li>
+					<li>Personalizar la experiencia del usuario</li>
+					<li>Permitir la interacción entre usuarios</li>
+					<li>Mostrar contenido relevante</li>
+					<li>Garantizar la seguridad de la aplicación</li>
+					<li>Detectar comportamientos indebidos</li>
+				</ul>
+
+				<hr>
+
+				<h2>4. Contenido generado por el usuario</h2>
+				<p>TreviuGo es una plataforma basada en contenido generado por los usuarios. Por lo tanto:</p>
+				<ul>
+					<li>Cada usuario es <strong>único responsable del contenido que publica</strong></li>
+					<li>TreviuGo <strong>no garantiza ni controla en tiempo real</strong> el contenido subido</li>
+					<li>Puede existir contenido no apto para menores de edad (18+)</li>
+				</ul>
+				<p>Al usar la plataforma, el usuario acepta que:</p>
+				<ul>
+					<li>Puede estar expuesto a contenido creado por terceros</li>
+					<li>Es su responsabilidad decidir qué contenido consumir</li>
+					<li>TreviuGo no se hace responsable por el contenido publicado por usuarios</li>
+				</ul>
+				<p>No obstante, nos reservamos el derecho de eliminar contenido que infrinja nuestras políticas.</p>
+
+				<hr>
+
+				<h2>5. Restricción de edad</h2>
+				<p>TreviuGo está dirigido a usuarios mayores de 13 años. Para ciertas funcionalidades o contenidos, se recomienda ser mayor de edad.</p>
+				<p>El usuario declara bajo su responsabilidad que cumple con los requisitos de edad aplicables.</p>
+
+				<hr>
+
+				<h2>6. Compartición de información</h2>
+				<p>No vendemos información personal.</p>
+				<p>Podemos compartir datos con:</p>
+				<ul>
+					<li>Servicios tecnológicos necesarios para operar la app (ej. almacenamiento de videos como Cloudinary)</li>
+					<li>Autoridades, cuando la ley lo requiera</li>
+				</ul>
+
+				<hr>
+
+				<h2>7. Almacenamiento y seguridad</h2>
+				<p>Implementamos medidas razonables de seguridad para proteger los datos. Sin embargo, ningún sistema es completamente seguro, por lo que no podemos garantizar seguridad absoluta.</p>
+
+				<hr>
+
+				<h2>8. Uso de servicios de terceros</h2>
+				<p>TreviuGo puede integrar servicios de terceros como:</p>
+				<ul>
+					<li>Cloudinary (almacenamiento de videos)</li>
+					<li>Servicios de autenticación</li>
+					<li>Analítica</li>
+				</ul>
+				<p>Estos servicios pueden manejar datos bajo sus propias políticas.</p>
+
+				<hr>
+
+				<h2>9. Derechos del usuario</h2>
+				<p>El usuario puede:</p>
+				<ul>
+					<li>Acceder a su información</li>
+					<li>Modificar su perfil</li>
+					<li>Solicitar eliminación de cuenta</li>
+				</ul>
+				<p>Para ello puede contactarnos en: <strong><a href="mailto:soporte@treviugo.com">soporte@treviugo.com</a></strong></p>
+
+				<hr>
+
+				<h2>10. Eliminación de contenido</h2>
+				<p>TreviuGo podrá eliminar contenido o cuentas que:</p>
+				<ul>
+					<li>Incumplan normas legales</li>
+					<li>Promuevan violencia o contenido ilegal</li>
+					<li>Afecten a otros usuarios</li>
+				</ul>
+
+				<hr>
+
+				<h2>11. Propiedad intelectual</h2>
+				<p>TreviuGo es una plataforma original. No es una copia oficial ni está afiliada a otras redes sociales.</p>
+				<p>El usuario conserva los derechos sobre su contenido, pero otorga a TreviuGo una licencia para mostrarlo dentro de la plataforma.</p>
+
+				<hr>
+
+				<h2>12. Cambios en esta política</h2>
+				<p>Podemos actualizar esta política en cualquier momento. Los cambios serán notificados dentro de la plataforma.</p>
+
+				<hr>
+
+				<h2>13. Contacto</h2>
+				<p>Correo: <a href="mailto:soporte@treviugo.com">soporte@treviugo.com</a></p>
+				<p>Sitio web: <a href="https://treviugo.com" target="_blank" rel="noopener noreferrer">https://treviugo.com</a></p>
+
+				<p class="closing">Al usar TreviuGo, aceptas esta Política de Privacidad.</p>
+				<p class="footer">TreviuGo © 2026</p>
+			</section>
+		</article>
+	</main>
+</body>
+</html>
